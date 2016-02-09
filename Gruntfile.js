@@ -60,10 +60,12 @@ module.exports = function(grunt) {
           'iframe',
           'gallery',
           'retina',
-          'fastclick'
+          'fastclick',
+          'video'
         ],
         basePath: 'src/js/',
         dest: 'dist/jquery.magnific-popup.js',
+        // dest: '/Applications/XAMPP/xamppfiles/htdocs/pfizer-cabo.local/public/js/jquery.magnific-popup.js',
         banner: '<%= banner %>'
       }
     },
@@ -111,6 +113,11 @@ module.exports = function(grunt) {
         preserveComments: 'some'
       }
     },
+
+    // watch : {
+    //   files: ['src/**'],
+    //   tasks: ['sass', 'mfpbuild', 'uglify']
+    // },
 
     watch: { // for development run 'grunt watch'
       jekyll: {
